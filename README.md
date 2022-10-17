@@ -1,12 +1,14 @@
 # Image background remover
 
-This is a python program, which removes background from provided pictures.
+This is a python program, which removes background from provided pictures with rembg library.
 
 ## Dependances
 
-Poetry as a package manager.
-rembg library which does the trick.
-The needed packages can be seen in pyproject.toml file.
+Works in Linux, didn't check if works in other OS.
+You will need to have installed:
+- Python >=3.10, <3.11
+- Poetry as a package manager.
+rembg and other libraries will be installed with poetry.
 
 ## Usage
 
