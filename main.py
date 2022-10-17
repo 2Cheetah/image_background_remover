@@ -2,7 +2,7 @@ from rembg import remove
 from PIL import Image
 from pathlib import Path
 from os import listdir
-from os.path import splitext, abspath
+from os.path import splitext
 
 
 def remove_bg():
@@ -13,10 +13,7 @@ def remove_bg():
     
     for index, pic in enumerate(all_files, start=1):
         input_path_filename = Path('./input_pics/' + pic)
-        # print(abspath(input_path_filename))
         output_path_filename = Path('./output_pics/' + splitext(pic)[0] + '_wo_bg' + '.png')
-        # print(abspath(output_path_filename))
-
         input_image = Image.open(input_path_filename)
         output_image = remove(input_image)
         output_image.save(output_path_filename)

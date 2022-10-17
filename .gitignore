@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 # Exclude input and output pictures
-input_pics/
-output_pics/
+input_pics/*
+output_pics/*
