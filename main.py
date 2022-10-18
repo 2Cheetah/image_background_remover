@@ -6,7 +6,7 @@ from os.path import splitext
 
 
 def remove_bg(input_pics):
-    list_of_extensions = ['.png', '.jpg']
+    list_of_extensions = ['.png', '.jpg', '.jpeg']
     all_files = [pic for pic in listdir(input_pics) if splitext(pic)[1] in list_of_extensions]
     output_filenames = [splitext(pic)[0]+'_wo_bg'+splitext(pic)[1] for pic in all_files]
     
